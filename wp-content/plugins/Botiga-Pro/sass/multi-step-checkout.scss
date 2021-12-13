@@ -1,0 +1,406 @@
+/**
+ * Multi Step Checkout
+ */
+
+// Import variables and mixins
+@import "abstracts/abstracts";
+
+.clear {
+    clear: both;
+}
+
+.woocommerce-checkout {
+
+    .woocommerce-form-coupon-toggle,
+    .woocommerce-form-login,
+    form.woocommerce-checkout #customer_details,
+    .checkout-wrapper,
+    .botiga-mstep-order-review {
+        display: none;
+        opacity: 0;
+        transform: translate3d( 0, 15px, 0 );
+        transition: ease opacity 300ms, ease transform 300ms;
+
+        &.show {
+            display: block;
+        }
+
+        &.showEffect {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    .woocommerce-form-login.show {
+        display: block !important;
+    }
+
+    .woocommerce-form-coupon {
+        display: none;
+        padding: 30px 50px;
+
+        &.show {
+            display: block;
+        }
+
+        p {
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .woocommerce-info,
+    .woocommerce-error {
+        padding: 30px 50px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .woocommerce-checkout {
+        .woocommerce-form-coupon,
+        .woocommerce-info,
+        .woocommerce-error {
+            padding: 15px 25px;
+        }    
+    }
+}
+
+.botiga-mstepc-wrapper {
+
+    .entry-content {
+        position: relative;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    #customer_details,
+    .checkout-wrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .woocommerce-billing-fields {
+        h3 {
+            text-align: center;
+            margin-top: 0;
+        }
+    }
+
+    .woocommerce-billing-fields__field-wrapper,
+    .woocommerce-shipping-fields__field-wrapper {
+        padding: 50px 50px 15px;
+        background: #f5f5f5;
+        margin-top: 28px;
+        margin-bottom: 40px;
+    }
+
+    .woocommerce-account-fields,
+    .woocommerce-additional-fields__field-wrapper {
+        background: #f5f5f5;
+        padding: 33px 50px 30px;
+        margin: 0;
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .woocommerce-form-login {
+        padding: 50px 50px 10px;
+        margin-bottom: 0;
+    }
+
+    .checkout-wrapper {
+        .woocommerce-checkout-review-order {
+            padding: 40px 50px 40px;
+        }
+    }
+
+    .botiga-mstep-order-review {
+        background: #f5f5f5;
+        padding: 50px 50px;
+        .divider {
+            margin: 30px 0 22px;
+        }
+    }
+
+    #place_order {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+        .woocommerce-billing-fields__field-wrapper,
+        .woocommerce-shipping-fields__field-wrapper,
+        .woocommerce-account-fields,
+        .woocommerce-additional-fields__field-wrapper,
+        .woocommerce-form-login,
+        .checkout-wrapper .woocommerce-checkout-review-order,
+        .botiga-mstep-order-review {
+            padding: 20px;
+        }
+    }
+
+    .botiga-mstepc-tabs-nav {
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+        margin-bottom: 70px;
+        margin-top: 50px;
+
+        .botiga-mstepc-tabs-nav-item {
+            position: relative;
+            text-align: center;
+            cursor: not-allowed;
+            width: 100%;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 18px;
+                left: 0;
+                width: 100%;
+                border-top: 2px solid #CCC;
+                z-index: 0;
+            }
+            .botiga-mstepc-tabs-nav-item-link {
+                display: block;
+                cursor: not-allowed;
+                pointer-events: none;
+            }
+            &.completed,
+            &.next-step,
+            &.current-step {
+                cursor: pointer;
+                .botiga-mstepc-tabs-nav-item-link {
+                    cursor: pointer;
+                    pointer-events: all;
+                }
+            } 
+            .label {
+                font-size: 0.95em;
+                opacity: 0.7;
+                transition: ease font-size 300ms, ease opacity 300ms;
+            }
+            .step {
+                position: relative;
+                display: block;
+                width: 35px;
+                height: 35px;
+                margin: 0 auto 10px;
+                background-color: #FFF;
+                border: 2px solid #CCC;
+                border-radius: 100%;
+                transition: ease border-color 300ms, ease background-color 300ms, ease color 300ms;
+                .step-number,
+                .step-completed {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate3d(-50%, -50%, 0);
+                }
+                .step-number {
+                    color: #CCC;
+                    font-weight: 800;
+                    transition: ease color 300ms;
+                } 
+                .step-completed {
+                    display: none;
+                }
+                svg {
+                    width: 14px;
+                    height: auto;
+                    transition: ease fill 300ms;
+                }
+            }
+
+            &:hover {
+                .step {
+                    .step-number {
+                        color: $color__primary;
+                    }
+                }
+                .label {
+                    opacity: 1;
+                }
+            }
+
+            &:hover,
+            &.completed,
+            &.current-step {
+                .label {
+                    opacity: 1;
+                }
+                .step {
+                    border-color: $color__primary;
+                }
+            }
+
+            &.current-step {
+                &:before {
+                    border-top-color: $color__primary;
+                }
+                .label {
+                    font-size: 1em;
+                }
+                .step {
+                    background-color: $color__primary;
+                    color: #FFF;
+                    .step-number {
+                        color: #FFF;
+                    }
+                    svg {
+                        fill: #FFF;
+                    }
+                }
+            }
+
+            &.completed {
+                &:before {
+                    border-top-color: $color__primary;
+                }
+                .step-number {
+                    display: none;
+                }
+                .step-completed {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .botiga-mstep-order-review__address {
+        display: flex;
+        > div {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .botiga-mstep-order-review__address {
+            flex-wrap: wrap;
+        }
+    }
+
+    .botiga-mstepc-prev,
+    .botiga-mstepc-next,
+    .botiga-mstepc-back-to-cart {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        span {
+            position: relative;
+            top: -2px;
+            margin-right: 10px;
+        }
+    }
+
+    .botiga-mstepc-back-to-cart {
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .botiga-mstepc-next {
+        span {
+            margin-left: 10px;
+        }
+    }
+
+    .botiga-mstepc-footer {
+        display: flex;
+        justify-content: center;
+        max-width: 700px;
+        margin: 30px auto 0;
+    }
+
+    &:not(.login):not(.billing-shipping) {
+        .botiga-mstepc-back-to-cart {
+            display: none;
+        }
+    }
+
+    .botiga-mstepc-skip-login {
+        display: none;
+    }
+
+    .botiga-mstepc-place-order {
+        display: none;
+        padding: 15px 80px;
+        svg {
+            display: none;
+            opacity: 0.7;
+            animation-name: botigaAnimRotate;
+            animation-timing-function: linear;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            transition: ease opacity 300ms;
+        }
+        &.loading {
+            .text {
+                display: none;
+            }
+            svg {
+                display: block;
+            }
+        }
+    }
+
+    &:not(.order-review) {
+        .botiga-mstepc-next {
+            position: relative;
+            margin-left: 60px;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -30px;
+                height: 100%;
+                width: 1px;
+                background-color: #CCC;
+                transform: translate3d(0, -50%, 0);
+            }
+        }
+    }
+
+    &.login {
+        .botiga-mstepc-skip-login {
+            display: block;
+        }
+        .botiga-mstepc-prev {
+            display: none;
+        }
+    }
+
+    &.billing-shipping {
+        .botiga-mstepc-footer {
+            &.no-login-step {
+                .botiga-mstepc-prev {
+                    display: none;
+                }
+                .botiga-mstepc-next {
+                    margin-left: 0;
+                    &:before {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &.order-review {
+        .botiga-mstepc-footer {
+            flex-direction: column;
+            align-items: center;
+        }
+        .botiga-mstepc-next {
+            display: none;
+        }
+        .botiga-mstepc-place-order {
+            display: inline-flex;
+            margin-top: 15px;
+        }
+    }
+
+}

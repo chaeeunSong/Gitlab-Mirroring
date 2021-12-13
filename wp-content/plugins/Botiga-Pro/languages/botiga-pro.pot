@@ -1,0 +1,685 @@
+# Copyright (C) 2021 botiga-pro
+# This file is distributed under the same license as the botiga-pro package.
+msgid ""
+msgstr ""
+"Project-Id-Version: botiga-pro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: aThemes <team@athemes.com>\n"
+"Last-Translator: aThemes <team@athemes.com>\n"
+"Report-Msgid-Bugs-To: https://athemes.com/contact/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: botiga-pro.php:77
+msgid "Botiga Pro is meant to be used with the Botiga theme. Please go to Appearance > Themes, search for \"Botiga\" and install/activate the theme."
+msgstr ""
+
+#: botiga-pro.php:89
+msgid "Botiga Pro needs the Botiga theme updated to the latest version. Please update the theme at Appearance > Themes."
+msgstr ""
+
+#: botiga-pro.php:126
+msgid "Footer Copyright Menu"
+msgstr ""
+
+#: botiga-pro.php:170
+msgid "Shop Sidebar"
+msgstr ""
+
+#: botiga-pro.php:172
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/classes/class-botiga-product-swatch.php:33
+msgid "Select"
+msgstr ""
+
+#: inc/classes/class-botiga-product-swatch.php:34
+msgid "Color"
+msgstr ""
+
+#: inc/classes/class-botiga-product-swatch.php:36, inc/customizer/options/header.php:188, inc/customizer/options/header.php:216, inc/customizer/options/header.php:291
+msgid "Button"
+msgstr ""
+
+#: inc/classes/class-botiga-product-swatch.php:173
+msgid "Choose an option"
+msgstr ""
+
+#: inc/customizer/options/blog-single.php:12
+msgid "Post date"
+msgstr ""
+
+#: inc/customizer/options/blog-single.php:13
+msgid "Post author"
+msgstr ""
+
+#: inc/customizer/options/blog-single.php:14
+msgid "Post categories"
+msgstr ""
+
+#: inc/customizer/options/blog-single.php:15
+msgid "Post comments"
+msgstr ""
+
+#: inc/customizer/options/blog-single.php:17
+msgid "Reading time"
+msgstr ""
+
+#: inc/customizer/options/blog-single.php:33
+msgid "Related posts slider"
+msgstr ""
+
+#: inc/customizer/options/blog-single.php:54
+msgid "Related posts slider navigation"
+msgstr ""
+
+#: inc/customizer/options/blog-single.php:58, inc/customizer/options/woocommerce-single.php:115
+msgid "Always show"
+msgstr ""
+
+#: inc/customizer/options/blog-single.php:59, inc/customizer/options/woocommerce-single.php:116
+msgid "Show on hover"
+msgstr ""
+
+#: inc/customizer/options/blog-single.php:79
+msgid "Number of posts"
+msgstr ""
+
+#: inc/customizer/options/blog-single.php:109, inc/customizer/options/woocommerce-single.php:166
+msgid "Number of columns"
+msgstr ""
+
+#: inc/customizer/options/blog-single.php:139
+msgid "Share Box"
+msgstr ""
+
+#: inc/customizer/options/footer.php:21
+msgid "Credits"
+msgstr ""
+
+#: inc/customizer/options/footer.php:22
+msgid "Social Profiles"
+msgstr ""
+
+#: inc/customizer/options/footer.php:24
+msgid "Payment Icons"
+msgstr ""
+
+#: inc/customizer/options/footer.php:25, inc/customizer/options/footer.php:119
+msgid "Navigation Menu"
+msgstr ""
+
+#: inc/customizer/options/footer.php:26
+msgid "HTML"
+msgstr ""
+
+#: inc/customizer/options/footer.php:27
+msgid "Shortcode"
+msgstr ""
+
+#: inc/customizer/options/footer.php:79, inc/customizer/options/footer.php:141, inc/customizer/options/footer.php:200, inc/customizer/options/footer.php:259, inc/customizer/options/woocommerce-single.php:233
+msgid "Position"
+msgstr ""
+
+#: inc/customizer/options/footer.php:82, inc/customizer/options/footer.php:144, inc/customizer/options/footer.php:203, inc/customizer/options/footer.php:262, inc/customizer/options/woocommerce-single.php:409, inc/customizer/options/woocommerce.php:84, inc/customizer/options/woocommerce.php:153
+msgid "Left"
+msgstr ""
+
+#: inc/customizer/options/footer.php:83, inc/customizer/options/footer.php:145, inc/customizer/options/footer.php:204, inc/customizer/options/footer.php:263, inc/customizer/options/woocommerce-single.php:411, inc/customizer/options/woocommerce.php:86, inc/customizer/options/woocommerce.php:157
+msgid "Right"
+msgstr ""
+
+#: inc/customizer/options/footer.php:120
+msgid "Configure menu"
+msgstr ""
+
+#: inc/customizer/options/footer.php:179
+msgid "HTML Content"
+msgstr ""
+
+#: inc/customizer/options/footer.php:238
+msgid "Shortcode Tag"
+msgstr ""
+
+#: inc/customizer/options/footer.php:288, inc/customizer/options/header.php:152, inc/customizer/options/header.php:314, inc/customizer/options/woocommerce-single.php:289
+msgid "Elements Spacing"
+msgstr ""
+
+#: inc/customizer/options/header.php:22, inc/customizer/options/header.php:259, inc/customizer/options/woocommerce-single.php:45, inc/customizer/options/woocommerce.php:285
+msgid "Layout 1"
+msgstr ""
+
+#: inc/customizer/options/header.php:26, inc/customizer/options/header.php:263, inc/customizer/options/woocommerce-single.php:49, inc/customizer/options/woocommerce.php:289
+msgid "Layout 2"
+msgstr ""
+
+#: inc/customizer/options/header.php:30, inc/customizer/options/woocommerce-single.php:53, inc/customizer/options/woocommerce.php:293, inc/customizer/options/woocommerce.php:524
+msgid "Layout 3"
+msgstr ""
+
+#: inc/customizer/options/header.php:34, inc/customizer/options/woocommerce-single.php:57
+msgid "Layout 4"
+msgstr ""
+
+#: inc/customizer/options/header.php:38, inc/customizer/options/woocommerce-single.php:61
+msgid "Layout 5"
+msgstr ""
+
+#: inc/customizer/options/header.php:43, inc/customizer/options/woocommerce-single.php:65
+msgid "Layout 6"
+msgstr ""
+
+#: inc/customizer/options/header.php:47, inc/customizer/options/woocommerce-single.php:69
+msgid "Layout 7"
+msgstr ""
+
+#: inc/customizer/options/header.php:51
+msgid "Layout 8"
+msgstr ""
+
+#: inc/customizer/options/header.php:69, inc/customizer/options/header.php:342
+msgid "Vertical Alignment"
+msgstr ""
+
+#: inc/customizer/options/header.php:72, inc/customizer/options/header.php:345, inc/customizer/options/woocommerce-single.php:237, inc/customizer/options/woocommerce.php:162
+msgid "Top"
+msgstr ""
+
+#: inc/customizer/options/header.php:73, inc/customizer/options/header.php:346, inc/customizer/options/woocommerce-single.php:410, inc/customizer/options/woocommerce.php:85
+msgid "Center"
+msgstr ""
+
+#: inc/customizer/options/header.php:74, inc/customizer/options/header.php:347, inc/customizer/options/woocommerce-single.php:238
+msgid "Bottom"
+msgstr ""
+
+#: inc/customizer/options/header.php:94
+msgid "Content Alignment"
+msgstr ""
+
+#: inc/customizer/options/header.php:121, inc/customizer/options/header.php:444
+msgid "Content Areas Spacing"
+msgstr ""
+
+#: inc/customizer/options/header.php:122, inc/customizer/options/header.php:445
+msgid "The spacing between logo, menu and elements."
+msgstr ""
+
+#: inc/customizer/options/header.php:182
+msgid "Left Side"
+msgstr ""
+
+#: inc/customizer/options/header.php:185, inc/customizer/options/header.php:213
+msgid "Hamburger Button"
+msgstr ""
+
+#: inc/customizer/options/header.php:186, inc/customizer/options/header.php:214, inc/customizer/options/header.php:289
+msgid "Search"
+msgstr ""
+
+#: inc/customizer/options/header.php:187, inc/customizer/options/header.php:215, inc/customizer/options/header.php:290
+msgid "Cart &amp; account icons"
+msgstr ""
+
+#: inc/customizer/options/header.php:189, inc/customizer/options/header.php:217, inc/customizer/options/header.php:292
+msgid "Contact info"
+msgstr ""
+
+#: inc/customizer/options/header.php:210
+msgid "Right Side"
+msgstr ""
+
+#: inc/customizer/options/header.php:254
+msgid "Desktop Offcanvas Mode"
+msgstr ""
+
+#: inc/customizer/options/header.php:286
+msgid "Additional Offcanvas Elements"
+msgstr ""
+
+#: inc/customizer/options/header.php:367
+msgid "Link alignment"
+msgstr ""
+
+#: inc/customizer/options/header.php:392
+msgid "Link separator"
+msgstr ""
+
+#: inc/customizer/options/header.php:413
+msgid "Link spacing"
+msgstr ""
+
+#: inc/customizer/options/header.php:474
+msgid "Enable wishlist icon"
+msgstr ""
+
+#: inc/customizer/options/header.php:517
+msgid "Desktop Offcanvas Menu"
+msgstr ""
+
+#: inc/customizer/options/header.php:538, inc/customizer/options/woocommerce-single.php:680, inc/customizer/options/woocommerce-single.php:778, inc/customizer/options/woocommerce.php:703
+msgid "Text Color"
+msgstr ""
+
+#: inc/customizer/options/header.php:559, inc/customizer/options/woocommerce-single.php:491, inc/customizer/options/woocommerce-single.php:659, inc/customizer/options/woocommerce-single.php:757, inc/customizer/options/woocommerce.php:624, inc/customizer/options/woocommerce.php:743
+msgid "Background Color"
+msgstr ""
+
+#: inc/customizer/options/header.php:580
+msgid "Link Separator Color"
+msgstr ""
+
+#: inc/customizer/options/header.php:601
+msgid "Padding"
+msgstr ""
+
+#: inc/customizer/options/header.php:645
+msgid "Cart Icon"
+msgstr ""
+
+#: inc/customizer/options/header.php:650
+msgid "Icon 1"
+msgstr ""
+
+#: inc/customizer/options/header.php:654
+msgid "Icon 2"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:34, inc/customizer/options/woocommerce-single.php:431, inc/customizer/options/woocommerce.php:584
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:90
+msgid "Related products slider"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:111
+msgid "Related products slider navigation"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:136
+msgid "Number of products"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:194
+msgid "Sticky Add to Cart"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:214, inc/customizer/options/woocommerce-single.php:855
+msgid "Enable"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:262
+msgid "Elements"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:266, inc/customizer/options/woocommerce-single.php:470
+msgid "Product Image"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:267
+msgid "Product Title"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:268
+msgid "Product Price"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:269
+msgid "Add to Cart"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:318
+msgid "Hide When Scroll to Top"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:339
+msgid "Visibility"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:341
+msgid "Show on all devices"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:342
+msgid "Desktop only"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:343
+msgid "Mobile/tablet only"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:360, inc/customizer/options/woocommerce-single.php:619
+msgid "Tabs"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:381
+msgid "Layout Style"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:383, inc/customizer/options/woocommerce.php:55
+msgid "Style 1"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:384, inc/customizer/options/woocommerce.php:59
+msgid "Style 2"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:385
+msgid "Style 3"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:386
+msgid "Style 4"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:387
+msgid "Style 5"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:406, inc/customizer/options/woocommerce.php:80
+msgid "Alignment"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:512
+msgid "Spacing Top/Bottom"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:540
+msgid "Sitcky Add To Cart"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:561
+msgid "Border color"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:581
+msgid "Background color"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:601
+msgid "Content color"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:639
+msgid "Default State"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:716
+msgid "Active State"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:736, inc/customizer/options/woocommerce.php:783
+msgid "Border Color"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:815
+msgid "Remaining Borders Color"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:816
+msgid "Also controls the horizontal line color in some layouts"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:835
+msgid "Product Swatch"
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:875
+msgid "This option require save and reload/refresh the page to see it working in the customizer preview. Make sure you are previewing a single variable product page with respective attributes/variations defined. Click in the below link to learn more about how to use this feature."
+msgstr ""
+
+#: inc/customizer/options/woocommerce-single.php:876, inc/customizer/options/woocommerce.php:315
+msgid "Learn more"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:50
+msgid "Shop Header Style"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:105
+msgid "Show Categories in the Header"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:106
+msgid "Controls whether to show or not the products categories in the shop page header."
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:125
+msgid "Show Sub Categories in the Header"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:126
+msgid "Controls whether to show or not the products categories in the category/taxonomy page header."
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:149
+msgid "No Sidebar"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:166
+msgid "Slide-out"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:170
+msgid "If the shop widget area is empty, the default widget sidebar area will be shown (the same that is shown in blog pages)"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:182
+msgid "Sidebar open button text"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:202
+msgid "Sidebar open icon"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:222
+msgid "Sidebar Top Columns"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:225
+msgid "1"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:226
+msgid "2"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:227
+msgid "3"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:228
+msgid "4"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:240, inc/customizer/options/woocommerce.php:279
+msgid "Wishlist"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:314
+msgid "Learn more about this feature in our documentation by clicking in the below link."
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:335
+msgid "Wishlist Tooltip"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:353
+msgid "Tooltip Text"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:373
+msgid "Show On Hover"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:408
+msgid "Wishlist Page Settings"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:429
+msgid "Create Wishlist Page"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:430
+msgid "My Wishlist"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:469
+msgid "Active Icon Color"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:489
+msgid "Icon Background Color"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:509
+msgid "Sticky cart totals box"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:542
+msgid "Sticky Checkout Totals Box"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:562
+msgid "Distraction Free Checkout"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:604
+msgid "Header Style"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:644
+msgid "Title Color"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:664
+msgid "Description Color"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:683
+msgid "Header Style - Category Buttons"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:723
+msgid "Text Color Hover"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:763
+msgid "Background Color Hover"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:803
+msgid "Border Color Hover"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:823
+msgid "Border Radius"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:852
+msgid "Columns"
+msgstr ""
+
+#: inc/customizer/options/woocommerce.php:888
+msgid "Products Gap"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:22
+msgid "Phone"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:23
+msgid "Email"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:25, inc/woocommerce/checkout/multi-step-checkout.php:35
+msgid "Name"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:26, inc/woocommerce/checkout/multi-step-checkout.php:36
+msgid "Last Name"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:27, inc/woocommerce/checkout/multi-step-checkout.php:37
+msgid "Company"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:28, inc/woocommerce/checkout/multi-step-checkout.php:38
+msgid "Address 1"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:29, inc/woocommerce/checkout/multi-step-checkout.php:39
+msgid "Address 2"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:30, inc/woocommerce/checkout/multi-step-checkout.php:40
+msgid "City"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:31, inc/woocommerce/checkout/multi-step-checkout.php:41
+msgid "State"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:32, inc/woocommerce/checkout/multi-step-checkout.php:42
+msgid "Post Code"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:33, inc/woocommerce/checkout/multi-step-checkout.php:43
+msgid "Country"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:71
+msgid "Back to Cart"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:83
+msgid "Login"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:88
+msgid "Billing & Shipping"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:93
+msgid "Order & Payment"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:98
+msgid "Order Review"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:149
+msgid "Skip Login"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:150
+msgid "Previous Step"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:151
+msgid "Next Step"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:154
+msgid "Place Order"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:170
+msgid "Customer Details"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:175
+msgid "Billing Details"
+msgstr ""
+
+#: inc/woocommerce/checkout/multi-step-checkout.php:179
+msgid "Shipping Details"
+msgstr ""
