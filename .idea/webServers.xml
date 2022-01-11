@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2a5c4ed6-beaf-4a54-9ac1-7a6f50fedb10" name="i-ogam">
+        <fileTransfer accessType="SFTP" host="brand.venet.kr" port="22" sshConfigId="dd4afe08-2dee-4cf6-91c1-540991d705a3" sshConfig="branduser@brand.venet.kr:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

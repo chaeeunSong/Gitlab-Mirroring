@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="brand.venet.kr" id="dd4afe08-2dee-4cf6-91c1-540991d705a3" port="22" nameFormat="DESCRIPTIVE" username="branduser" />
+    </configs>
+  </component>
+</project>
