@@ -28,3 +28,16 @@ function change_won_currency_symbol( $currency_symbol, $currency ) {
     }
     return $currency_symbol; }
 
+
+// 상품 상세페이지에 표시되는 장바구니 버튼 텍스트 편집
+add_filter('woocommerce_product_single_add_to_cart_text', 'my_woocommerce_product_single_add_to_cart_text_20210504');
+
+function my_woocommerce_product_single_add_to_cart_text_20210504(){
+    return '장바구니 추가';
+}
+// 아카이브(목록)에 표시되는 장바구니 버튼 텍스트 편집
+add_filter('woocommerce_product_add_to_cart_text', 'my_woocommerce_product_add_to_cart_text_20210504');
+
+function my_woocommerce_product_add_to_cart_text_20210504(){
+    return '장바구니 추가';
+}
