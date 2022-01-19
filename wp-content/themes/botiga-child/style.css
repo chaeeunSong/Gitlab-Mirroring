@@ -29,6 +29,8 @@ Text Domain: botiga
 /* Product page 스타일 적용 */
 body.page-id-547{background:#f4f4f4;}
 
+/* BrandStory page 스타일 적용 */
+body.page-id-653 .content-wrapper{margin-top:0;}
 
 /* 반응형 스타일 */
 @media only screen and (max-width: 991px){
