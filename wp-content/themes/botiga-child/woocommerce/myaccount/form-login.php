@@ -206,9 +206,22 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
                     logout.addEventListener('click', kakaoLogout);
                     sion.addEventListener('click', secession);
                 </script>
+            </div>
 
+            <div class="sns_login">
+                <div class="wp-social-login-widget">
+                    <div class="wp-social-login-provider-list">
+                        <a rel="nofollow" href="https://brand.venet.kr/wp-login.php?action=wordpress_social_authenticate&amp;mode=login&amp;provider=Facebook&amp;redirect_to=https%3A%2F%2Fbrand.venet.kr%2Fwp-login.php%3Floggedout%3Dtrue%26wp_lang%3Dko_KR" title="Facebook: 사용하여 연동" class="wp-social-login-provider wp-social-login-provider-facebook" data-provider="Facebook" role="button" style="text-decoration:none;">
+                            <img alt="Facebook" src="https://ivenet02.cafe24.com/brandshop/facebook_login.png" aria-hidden="true">
+                        </a>
+                        <a rel="nofollow" href="https://brand.venet.kr/wp-login.php?action=wordpress_social_authenticate&amp;mode=login&amp;provider=Google&amp;redirect_to=https%3A%2F%2Fbrand.venet.kr%2Fwp-login.php%3Floggedout%3Dtrue%26wp_lang%3Dko_KR" title="Google: 사용하여 연동" class="wp-social-login-provider wp-social-login-provider-google" data-provider="Google" role="button">
+                            <img alt="Google" src="https://ivenet02.cafe24.com/brandshop/google_login.png" aria-hidden="true">
+                        </a>
+                    </div> <!-- / div.wp-social-login-connect-options -->
 
+                    <div class="wp-social-login-widget-clearing"></div>
 
+                </div> <!-- / div.wp-social-login-widget -->
             </div>
 
         </form>
