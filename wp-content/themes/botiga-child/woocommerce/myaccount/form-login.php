@@ -132,6 +132,85 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
                 </script>
             </div>
 
+            <div class="kakao_login">
+
+                <!-- 카카오 간편로그인 api -->
+                <a href="#0" id="kakaoLogin"><img src="https://ivenet02.cafe24.com/brandshop/kakao_login.png" alt="카카오계정 로그인"/></a>
+                <a href="#0" id="kakaoLogout"><img src="https://ivenet02.cafe24.com/brandshop/kakao_loginout.png" alt="카카오계정 로그아웃"/></a>
+
+                <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+                <script>
+                    function saveToDos(token) { //item을 localStorage에 저장합니다.
+                        typeof(Storage) !== 'undefined' && sessionStorage.setItem('AccessKEY', JSON.stringify(token));
+                    };
+
+                    window.Kakao.init('c67fe9f893b1825d518ba612f35a64fc');
+
+                    function kakaoLogin() {
+                        window.Kakao.Auth.login({
+                            scope: 'profile_nickname, account_email', //동의항목 페이지에 있는 개인정보 보호 테이블의 활성화된 ID값을 넣습니다.
+                            success: function(response) {
+                                saveToDos(response.access_token)  // 로그인 성공하면 사용자 엑세스 토큰 sessionStorage에 저장
+                                window.Kakao.API.request({ // 사용자 정보 가져오기
+                                    url: '/v2/user/me',
+                                    success: (res) => {
+                                        const kakao_account = res.kakao_account;
+                                        alert('로그인 성공');
+                                        window.location.href='https://brand.venet.kr/'
+                                    }
+                                });
+                            },
+                            fail: function(error) {
+                                console.log(error);
+                            }
+                        });
+                    };
+
+                    const login = document.querySelector('#kakaoLogin');
+                    login.addEventListener('click', kakaoLogin);
+                </script>
+                <script>
+
+                    window.Kakao.init('c67fe9f893b1825d518ba612f35a64fc');
+                    window.Kakao.Auth.setAccessToken(JSON.parse(sessionStorage.getItem('AccessKEY'))); //sessionStorage에 저장된 사용자 엑세스 토큰 받아온다.
+
+                    function kakaoLogout() {
+                        if (!Kakao.Auth.getAccessToken()) {
+                            console.log('Not logged in.');
+                            return;
+                        }
+                        Kakao.Auth.logout(function(response) {
+                            alert(response +' logout');
+                            window.location.href='/'
+                        });
+                    };
+
+                    function secession() {
+                        Kakao.API.request({
+                            url: '/v1/user/unlink',
+                            success: function(response) {
+                                console.log(response);
+                                //callback(); //연결끊기(탈퇴)성공시 서버에서 처리할 함수
+                                window.location.href='/'
+                            },
+                            fail: function(error) {
+                                console.log('탈퇴 미완료')
+                                console.log(error);
+                            },
+                        });
+                    };
+
+                    const logout = document.querySelector('#kakaoLogout');
+                    const sion = document.querySelector('#secession');
+
+                    logout.addEventListener('click', kakaoLogout);
+                    sion.addEventListener('click', secession);
+                </script>
+
+
+
+            </div>
+
         </form>
 
         <?php if ( 'yes' === get_option( 'woocommerce_enable_myaccount_registration' ) ) : ?>
