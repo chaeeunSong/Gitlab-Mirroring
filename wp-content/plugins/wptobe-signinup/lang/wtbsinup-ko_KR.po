@@ -1,0 +1,481 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPTOBE Signinup v1.00\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2020-05-31 03:56:56+0000\n"
+"Last-Translator: admin <leokgang@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Korean\n"
+"X-Poedit-Country: KOREA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: admin/admin-settings.php:6
+#@ wtbsinup
+msgid "You do not have sufficient permissions to access this page."
+msgstr "이 페이지에 접근할 권한이 없습니다"
+
+#: admin/admin-settings.php:11
+#: admin/admin-settings.php:12
+#@ wtbsinup
+msgid "Wptobe Signinup"
+msgstr ""
+
+#: admin/admin-ui.php:8
+#@ wtbsinup
+msgid "Input value:"
+msgstr "입력:"
+
+#: admin/admin-ui.php:12
+#@ wtbsinup
+msgid "No input value:"
+msgstr "입력없음"
+
+#: admin/admin-ui.php:64
+#: skin/black/profile-html.php:278
+#: skin/black/profile-html.php:372
+#: skin/default/profile-html.php:278
+#: skin/default/profile-html.php:372
+#: skin/red/profile-html.php:278
+#: skin/red/profile-html.php:372
+#@ wtbsinup
+msgid "Save Changes"
+msgstr "저장"
+
+#: admin/admin-ui.php:74
+#@ wtbsinup
+msgid "Sign In"
+msgstr "로그인"
+
+#: admin/admin-ui.php:75
+#@ wtbsinup
+msgid "Sign Up"
+msgstr "회원가입"
+
+#: admin/admin-ui.php:76
+#: inc/install.php:53
+#@ wtbsinup
+msgid "Profile"
+msgstr "프로파일"
+
+#: admin/admin-ui.php:77
+#@ wtbsinup
+msgid "Options"
+msgstr "설정"
+
+#: admin/admin-ui.php:78
+#@ wtbsinup
+msgid "Shortcodes"
+msgstr "숏코드"
+
+#: admin/admin-ui.php:134
+#@ wtbsinup
+msgid "Select sign in page"
+msgstr "로그인 페이지 선택"
+
+#: admin/admin-ui.php:137
+#: admin/admin-ui.php:785
+#@ wtbsinup
+msgid "Before sign in"
+msgstr "로그인 전"
+
+#: admin/admin-ui.php:138
+#: admin/admin-ui.php:786
+#@ wtbsinup
+msgid "After sign in"
+msgstr "로그인 후"
+
+#: admin/admin-ui.php:154
+#: admin/admin-ui.php:485
+#: admin/admin-ui.php:512
+#: admin/admin-ui.php:801
+#: admin/admin-ui.php:828
+#@ wtbsinup
+msgid "Select"
+msgstr "선택"
+
+#: admin/admin-ui.php:181
+#@ wtbsinup
+msgid "Home"
+msgstr "홈"
+
+#: admin/admin-ui.php:202
+#: admin/admin-ui.php:499
+#@ wtbsinup
+#@ textdomain
+msgid "View"
+msgstr "보기"
+
+#: admin/admin-ui.php:466
+#@ wtbsinup
+msgid "Select sign up page"
+msgstr "회원가입 페이지 선택"
+
+#: admin/admin-ui.php:469
+#@ wtbsinup
+msgid "Before sign up"
+msgstr "회원가입 전"
+
+#: admin/admin-ui.php:470
+#@ wtbsinup
+msgid "After sign up"
+msgstr "회원가입 후"
+
+#: admin/admin-ui.php:575
+#@ wtbsinup
+msgid "Save"
+msgstr "저장"
+
+#: admin/admin-ui.php:782
+#@ wtbsinup
+msgid "Select profile page"
+msgstr "프로파일 페이지 선택"
+
+#: admin/admin-ui.php:924
+#@ wtbsinup
+msgid "Select a skin"
+msgstr "스킨 선택"
+
+#: admin/admin-ui.php:937
+#@ wtbsinup
+msgid "Default"
+msgstr "기본"
+
+#: admin/admin-ui.php:1338
+#@ wtbsinup
+msgid "Your settings have been saved."
+msgstr "저장 되었습니다. "
+
+#: inc/functions.php:69
+#: inc/functions.php:202
+#@ wtbsinup
+msgid "You must enter a valid text."
+msgstr "보안문자를 정확하게 입력하세요."
+
+#: inc/functions.php:162
+#@ wtbsinup
+msgid "User ID already taken by others"
+msgstr "사용 가능한 아이디가 아닙니다. "
+
+#: inc/functions.php:167
+#@ wtbsinup
+msgid "This username is not valid"
+msgstr "사용 가능한 아이디가 아닙니다. "
+
+#: inc/functions.php:172
+#@ wtbsinup
+msgid "Email already taken by others"
+msgstr "이미 사용중인 이메일입니다. "
+
+#: inc/functions.php:177
+#@ wtbsinup
+msgid "This email is not valid"
+msgstr "이메일을 정확히 입력하세요."
+
+#: inc/functions.php:182
+#@ wtbsinup
+msgid "This password is not valid"
+msgstr "패스워드를 정확히 입력하세요."
+
+#: inc/functions.php:192
+#@ wtbsinup
+msgid "Password did not match"
+msgstr "패스워드가 일치하지 않습니다. "
+
+#: inc/install.php:61
+#@ wtbsinup
+msgid "[bloginfo]"
+msgstr "[bloginfo]"
+
+#: inc/install.php:62
+#@ wtbsinup
+msgid "You recentely requested to reset your password for your account.<br/> Your new password is included below.<br/> You may wish to retain a copy for your records."
+msgstr "패스워드 초기화를 요청하셨습니다. <br/> 아래 보내드린 새 패스워드로 로그인 하시기 바랍니다. "
+
+#: inc/install.php:63
+#@ wtbsinup
+msgid "Username: [wtb_username] <br/> Password: [wtb_password]"
+msgstr "아이디: [wtb_username] <br/> 패스워드: [wtb_password]"
+
+#: inc/install.php:64
+#@ wtbsinup
+msgid "This is an automated message. Please do not reply to this address.\tThanks, "
+msgstr "발신 전용 메일입니다. 이메일에 답장을 보내지 마시기 바랍니다.\\\t 감사합니다. "
+
+#: skin/black/password-reset-html.php:57
+#: skin/default/password-reset-html.php:57
+#: skin/red/password-reset-html.php:57
+#@ wtbsinup
+msgid "Password reset successfully! <br /><br />An email containing a new password has been sent to the email address on file for your account."
+msgstr "패스워드가 성공적으로 변경되었습니다. <br /><br /> 가입하신 이메일 주소로 보내드린 메일을 확인해 주시기 바랍니다. "
+
+#: skin/black/password-reset-html.php:69
+#: skin/default/password-reset-html.php:69
+#: skin/red/password-reset-html.php:69
+#@ wtbsinup
+msgid "Either the username or email address do not exist in our records."
+msgstr "존재하지 않은 아이디/이메일 입니다. "
+
+#: skin/black/password-reset-html.php:91
+#: skin/default/password-reset-html.php:91
+#: skin/red/password-reset-html.php:91
+#@ wtbsinup
+msgid "Please enter your username or email address. You will receive a link to create a new password via email."
+msgstr "아이디 또는 이메일 주소를 입력하시면 새로운 패스워드를 이메일로 전송해 드립니다. "
+
+#: skin/black/password-reset-html.php:97
+#: skin/default/password-reset-html.php:97
+#: skin/red/password-reset-html.php:97
+#@ wtbsinup
+msgid "Username or Email Address"
+msgstr "아이디 또는 이메일"
+
+#: skin/black/password-reset-html.php:104
+#: skin/default/password-reset-html.php:104
+#: skin/red/password-reset-html.php:104
+#@ wtbsinup
+msgid "Get New Password"
+msgstr "새 패스워드 신청"
+
+#: skin/black/password-reset-html.php:112
+#: skin/default/password-reset-html.php:112
+#: skin/red/password-reset-html.php:112
+#@ wtbsinup
+msgid "Back to Sign in"
+msgstr "로그인 화면으로 돌아가기"
+
+#: skin/black/profile-html.php:46
+#: skin/default/profile-html.php:46
+#: skin/red/profile-html.php:46
+#@ wtbsinup
+msgid "Update failed! Please check your account(E-mail) information."
+msgstr "업데이트에 실패했습니다. 올바른 이메일을 입력했는지 확인해 주세요."
+
+#: skin/black/profile-html.php:53
+#: skin/default/profile-html.php:53
+#: skin/red/profile-html.php:53
+#@ wtbsinup
+msgid "Update failed! Please check your account information."
+msgstr "저장에 실패했습니다. 입력하신 계정 정보를 다시 확인해 주세요."
+
+#: skin/black/profile-html.php:80
+#: skin/default/profile-html.php:80
+#: skin/red/profile-html.php:80
+#@ wtbsinup
+msgid "Your password changed successfully."
+msgstr "패스워드가 성공적으로 변경되었습니다. "
+
+#: skin/black/profile-html.php:87
+#: skin/default/profile-html.php:87
+#: skin/red/profile-html.php:87
+#@ wtbsinup
+msgid "The change password operation failed."
+msgstr "패스워드 변경에 실패했습니다. "
+
+#: skin/black/profile-html.php:156
+#: skin/default/profile-html.php:156
+#: skin/red/profile-html.php:156
+#@ wtbsinup
+msgid "Account"
+msgstr "계정"
+
+#: inc/install.php:27
+#: inc/install.php:42
+#: skin/black/profile-html.php:157
+#: skin/default/profile-html.php:157
+#: skin/red/profile-html.php:157
+#@ wtbsinup
+msgid "Password"
+msgstr "패스워드"
+
+#: skin/black/profile-html.php:185
+#: skin/default/profile-html.php:185
+#: skin/red/profile-html.php:185
+#@ wtbsinup
+msgid "Display Name"
+msgstr "이름"
+
+#: skin/black/profile-html.php:203
+#: skin/default/profile-html.php:203
+#: skin/red/profile-html.php:203
+#@ wtbsinup
+msgid "Email "
+msgstr "이메일"
+
+#: skin/black/profile-html.php:223
+#: skin/default/profile-html.php:223
+#: skin/red/profile-html.php:223
+#@ wtbsinup
+msgid "Member Since"
+msgstr "가입일"
+
+#: skin/black/profile-html.php:243
+#: skin/default/profile-html.php:243
+#: skin/red/profile-html.php:243
+#@ wtbsinup
+msgid "Website"
+msgstr "홈페이지"
+
+#: skin/black/profile-html.php:261
+#: skin/default/profile-html.php:261
+#: skin/red/profile-html.php:261
+#@ wtbsinup
+msgid "Biographical Info"
+msgstr "자기소개"
+
+#: skin/black/profile-html.php:317
+#: skin/default/profile-html.php:317
+#: skin/red/profile-html.php:317
+#@ wtbsinup
+msgid "Current Password"
+msgstr "현재 패스워드"
+
+#: skin/black/profile-html.php:335
+#: skin/default/profile-html.php:335
+#: skin/red/profile-html.php:335
+#@ wtbsinup
+msgid "New Password"
+msgstr "새 패스워드"
+
+#: skin/black/profile-html.php:353
+#: skin/default/profile-html.php:353
+#: skin/red/profile-html.php:353
+#@ wtbsinup
+msgid "Confirm Password"
+msgstr "새 패스워드 확인"
+
+#: skin/black/sign-in-html.php:12
+#: skin/default/sign-in-html.php:12
+#: skin/red/sign-in-html.php:13
+#@ wtbsinup
+msgid "Your account information was entered incorrectly."
+msgstr "입력하신 계정 정보가 정확하지 않습니다. "
+
+#: skin/black/sign-up-html.php:12
+#: skin/default/sign-up-html.php:12
+#: skin/red/sign-up-html.php:12
+#@ wtbsinup
+msgid "Your account created successfully."
+msgstr "계정이 생성되었습니다. 회원 가입 해 주셔서 감사합니다.  "
+
+#: admin/admin-ui.php:139
+#: admin/admin-ui.php:470
+#: admin/admin-ui.php:785
+#@ wtbsinup
+msgid "(Redirect to)"
+msgstr "(이동할 페이지)"
+
+#: inc/install.php:23
+#: inc/install.php:33
+#@ wtbsinup
+msgid "Sign in"
+msgstr "로그인"
+
+#: inc/install.php:24
+#: inc/install.php:40
+#: inc/install.php:54
+#@ wtbsinup
+msgid "Username"
+msgstr "아이디"
+
+#: inc/install.php:25
+#: inc/install.php:41
+#: inc/install.php:55
+#@ wtbsinup
+msgid "Email"
+msgstr "이메일"
+
+#: inc/install.php:26
+#@ wtbsinup
+msgid "Username/Email"
+msgstr "아이디 또는 이메일"
+
+#: inc/install.php:28
+#: inc/install.php:44
+#@ wtbsinup
+msgid "Enter the words above:"
+msgstr "보안문자 입력"
+
+#: inc/install.php:29
+#@ wtbsinup
+msgid "Remember me"
+msgstr "로그인 정보 저장"
+
+#: inc/install.php:30
+#@ wtbsinup
+msgid "Reset password"
+msgstr "암호 재설정"
+
+#: inc/install.php:31
+#: inc/install.php:45
+#@ wtbsinup
+msgid "Separator"
+msgstr "구분선"
+
+#: inc/install.php:32
+#: inc/install.php:46
+#@ wtbsinup
+msgid "Sep.(or)"
+msgstr "구분선(글자포함)"
+
+#: inc/install.php:39
+#: inc/install.php:47
+#@ wtbsinup
+msgid "Sign up"
+msgstr "회원가입"
+
+#: inc/install.php:43
+#@ wtbsinup
+msgid "Password_CF"
+msgstr "패스워드 확인"
+
+#: inc/install.php:56
+#@ wtbsinup
+msgid "Name "
+msgstr "이름"
+
+#: inc/install.php:57
+#@ wtbsinup
+msgid "Role"
+msgstr "역할"
+
+#: inc/install.php:67
+#@ wtbsinup
+msgid "Title"
+msgstr "제목"
+
+#: inc/install.php:68
+#@ wtbsinup
+msgid "Header"
+msgstr "헤더"
+
+#: inc/install.php:69
+#@ wtbsinup
+msgid "Body"
+msgstr "바디"
+
+#: inc/install.php:70
+#@ wtbsinup
+msgid "Footer"
+msgstr "푸터"
+
+#: inc/install.php:78
+#@ wtbsinup
+msgid "From Email"
+msgstr "발신 이메일"
+
+#: inc/install.php:79
+#@ wtbsinup
+msgid "From Name"
+msgstr "발신처 이름"
+
