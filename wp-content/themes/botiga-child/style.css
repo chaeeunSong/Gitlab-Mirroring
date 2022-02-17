@@ -16,6 +16,9 @@ Text Domain: botiga
 .main_viewer_btn{width:120px; height:50px; line-height: 50px; float:left; color:#fff; text-align:center; background:#0f834d; color:#fff; text-align:center; font-size:12px; opacity:1; cursor:pointer;}
 .main_viewer_btn:hover{opacity:0.8; transition:.6s;}
 
+/* Main */
+.wp-block-image{margin:0 auto;}
+
 /* Shop List Page */
 .shop_list{width:100%; overflow:hidden; padding-top:50px; padding-bottom:50px; background:#fff; border-radius:20px; margin-top:20px; margin-bottom:20px;}
 .product_wrap{width:90%; margin:0 auto;}
@@ -56,9 +59,6 @@ body.page-id-30 .register{border:0;}
 .register_con_wrap{display: none;}
 
 .icon_act{color:#0d66c2;}
-
-
-
 
 /* FAQ page */
 .faq_viewer{color: #fff; text-align: center;}
