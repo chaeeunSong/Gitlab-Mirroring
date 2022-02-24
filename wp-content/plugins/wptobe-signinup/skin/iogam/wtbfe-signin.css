@@ -10,11 +10,19 @@
      font-weight: normal;
      font-style: normal;
 }
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .wtb_hide{display:none;}
-.wtbfe-signin-container{justify-content: center;font-family: 'NIXGONM-Vb', sans-serif;font-size: 13px;padding:50px 0;line-height: 20px;color: #333;min-height:800px;}
+.wtbfe-signin-container{justify-content: center; font-family: 'Noto Sans KR', sans-serif; font-size: 13px;line-height: 20px;color: #333;min-height:800px;}
 .wtbfe-signin-box{
 	margin: auto;background: #fff;padding: 20px;
-    border: solid 2px #eaeaea;
+    /*border: solid 2px #eaeaea;*/
 	width:360px;
 	width:var(--frmwidth);
 
@@ -50,7 +58,7 @@ div.sin_rememberme{display:inline-block;}div.sin_resetpw{display:inline-block;fl
 	margin: 0;padding: 0;
 	line-height: 52px;
 }
-.wtbfe-input-field.sin_resetpw .wtbfe_signin_changepw a{color: #06c;font-weight:500;text-decoration:none;border:none;}
+.wtbfe-input-field.sin_resetpw .wtbfe_signin_changepw a{color: #C85342;font-weight:500;text-decoration:none;border:none;}
 .wtbfe-input-field.sin_resetpw .wtbfe_signin_changepw a:hover{text-decoration:underline;}
 .wtbfe-signin-fields-wrapper .wtbfe-input-field{margin-top:5px;margin-bottom: 5px;}
 .wtbfe-signin-fields-wrapper .wtbfe-input-field:first-child .label{
@@ -127,7 +135,7 @@ div.sin_rememberme{display:inline-block;}div.sin_resetpw{display:inline-block;fl
 }
 .wtbfe-signin-btn-wrapper input[type="submit"].wtbfe-signin-button,.wtbfe-signin-btn-wrapper input[type="submit"].wtbfe-signin-button:visited{
 	background:0;
-	background-color:#6e8fef;
+	background-color:#C85342;
 	color: #fff !important;
 	text-shadow: none;
 	border: 1px solid transparent;
@@ -144,8 +152,8 @@ div.sin_rememberme{display:inline-block;}div.sin_resetpw{display:inline-block;fl
 }
 .wtbfe-signin-btn-wrapper input[type="submit"].wtbfe-signin-button:hover,.wtbfe-signin-btn-wrapper input[type="submit"].wtbfe-signin-button:visited:hover{
 	
-	border-color: #ccc;
-	background-color:#6e8fef;
+	/*border-color: #ccc;*/
+	background-color:#C85342;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 	text-decoration: none !important;
 }
@@ -286,14 +294,14 @@ div.sin_rememberme{display:inline-block;}div.sin_resetpw{display:inline-block;fl
 	white-space: nowrap;
 	margin-bottom: 20px;
 
-	background-color:#6e8fef;
+	background-color:#C85342;
     letter-spacing: 1px;
     border-radius: 30px 30px 30px 30px;
 
 }
 .wtbfe-repw-btn-wrapper input[type="submit"].wtbfe-repw-button:visited{
 	background: 0;
-	background-color: #6e8fef;
+	background-color: #C85342;
 	color: #fff !important;
 	text-shadow: none;
 	border: 1px solid transparent;
@@ -315,7 +323,7 @@ div.sin_rememberme{display:inline-block;}div.sin_resetpw{display:inline-block;fl
 .wtbfe-repw-button span{padding: 0;text-decoration: none;}
 .wtbfe-repw-separator{margin-top: 15px;margin-bottom: 0px;height: 0;border-top: 1px solid #ddd;border-bottom: 1px solid #fff;position: relative;}
 .wtbfe-repw-back-signin{padding-top:10px;}
-.wtbfe-repw-fields-wrapper  .wtbfe-repw-back-signin a{color: #06c;text-decoration:none;}
+.wtbfe-repw-fields-wrapper  .wtbfe-repw-back-signin a{color:#C85342;text-decoration:none;}
 .wtbfe-repw-fields-wrapper .wtbfe-repw-back-signin a:hover{text-decoration:underline;}
 /* Continue with Google */
 .wtbfe-signin-btn-google { 
@@ -394,11 +402,10 @@ svg.wtbfe-facebook-icon { width:32px; height:auto; vertical-align:-7px; padding-
 	text-align:center;
 }
 .wtbfe-signin-fields-wrapper .wtbfe-input-field.sin_signuplink a{
-	color: #00a5cf;
-	color: #06c;
+	color: #C85342;
 	text-decoration:none !important;
 	font-size:14px;
-	font-family: 'NIXGONB-Vb', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 .wtbfe-signin-fields-wrapper .wtbfe-input-field.sin_signuplink a:hover{
 	text-decoration:underline !important;
@@ -455,6 +462,6 @@ svg.wtbfe-facebook-icon { width:32px; height:auto; vertical-align:-7px; padding-
 @media only screen and (min-width: 1200px) {
   .audioNrefresh_wrap, .code_wrap,.captitle_wrap {--cimgpadding: 77px;}
   .wtbsinup_captcha.sin_captcha{--capheight:114px;}
-  .wtbfe-signin-box{--frmwidth:560px;}
+  .wtbfe-signin-box{--frmwidth:560px; float:left;}
 }
 

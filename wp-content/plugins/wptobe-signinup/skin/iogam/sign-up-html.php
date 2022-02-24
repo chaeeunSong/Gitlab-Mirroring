@@ -1,4 +1,8 @@
-<?php 
+<style>
+    body{background:url(https://shop.ivenet.co.kr/data/skin/responsive_sports_sporti_gl/images/banner/4/images_19.jpg); background-size:cover; background-repeat:no-repeat; background-position:center;}
+</style>
+
+<?php
 	$signup_field_order = get_option( 'wtb_signup_fields' );
 	$wtbsigninup_setopt = get_option( 'wtbsigninup_setopt' );
 	$wtbsinup_lang = get_option( 'wtbsinup_lang' );
@@ -90,7 +94,7 @@
 					case 'o_header':
 						?>
 						<div class="wtbfe-pgtitle-field">	   
-							<div class="wtbfe-pgtitle-text"><?php echo esc_html($value[1]);?></div>
+							<!--<div class="wtbfe-pgtitle-text"><?php echo esc_html($value[1]);?></div>-->
 						</div>
 						<?php
 						break;
@@ -106,6 +110,7 @@
  
  <!-- Part B: Sign up -->
  <div class="wtbfe-signup-box">
+ <div><p style="font-size:26px; margin-top:30px;"><b>회원가입</b>을 시작합니다</p></div>
   <div class="wtbfe-signup-inner">
 	<div class="wtbfe-signup-fields-wrapper">
 		<?php 

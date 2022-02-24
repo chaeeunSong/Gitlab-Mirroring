@@ -10,11 +10,19 @@
      font-weight: normal;
      font-style: normal;
 }
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .wtb_hide{display:none;}
-.wtbfe-signup-container{justify-content: center;font-family: 'NIXGONM-Vb', sans-serif;font-size: 13px;padding:50px 0;line-height: 20px;color: #333;min-height:800px;}
+.wtbfe-signup-container{justify-content: center; font-family: 'Noto Sans KR', sans-serif; font-size: 13px; line-height: 20px;color: #333;min-height:800px;}
 .wtbfe-signup-box{
 	margin: auto;background: #fff;padding: 20px;
-    border: solid 2px #eaeaea;
+    /*border: solid 2px #eaeaea;*/
 	width:360px;
 	width:var(--frmwidth);
 
@@ -130,7 +138,7 @@ div.sup_rememberme{display:inline-block;}div.sup_resetpw{display:inline-block;fl
 }
 .wtbfe-signup-btn-wrapper input[type="submit"].wtbfe-signup-button,.wtbfe-signup-btn-wrapper input[type="submit"].wtbfe-signup-button:visited{
 	background:0;
-	background-color:#6e8fef;
+	background-color:#C85342;
 	color: #fff !important;
 	text-shadow: none;
 	border: 1px solid transparent;
@@ -147,8 +155,8 @@ div.sup_rememberme{display:inline-block;}div.sup_resetpw{display:inline-block;fl
 }
 .wtbfe-signup-btn-wrapper input[type="submit"].wtbfe-signup-button:hover,.wtbfe-signup-btn-wrapper input[type="submit"].wtbfe-signup-button:visited:hover{
 	
-	border-color: #ccc;
-	background-color:#6e8fef;
+	/*border-color: #ccc;*/
+	background-color:#C85342;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 	text-decoration: none !important;
 }
@@ -395,11 +403,10 @@ svg.wtbfe-facebook-icon { width:32px; height:auto; vertical-align:-7px; padding-
 	text-align:center;
 }
 .wtbfe-signup-fields-wrapper .wtbfe-input-field.sup_signinlink a{
-	color: #00a5cf;
-	color: #06c;
+	color: #C85342;
 	text-decoration:none !important;
 	font-size:14px;
-	font-family: 'NIXGONB-Vb', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 .wtbfe-signup-fields-wrapper .wtbfe-input-field.sup_signinlink a:hover{
 	text-decoration:underline !important;
@@ -442,6 +449,6 @@ svg.wtbfe-facebook-icon { width:32px; height:auto; vertical-align:-7px; padding-
 @media only screen and (min-width: 1200px) {
   .audioNrefresh_wrap, .code_wrap,.captitle_wrap {--cimgpadding: 77px;}
   .wtbsinup_captcha.sup_captcha{--capheight:114px;}
-  .wtbfe-signup-box{--frmwidth:560px;}
+  .wtbfe-signup-box{--frmwidth:560px; float:left;}
 }
 

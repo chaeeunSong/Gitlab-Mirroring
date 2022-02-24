@@ -1,4 +1,8 @@
-<?php 
+<style>
+    body{background:url(https://shop.ivenet.co.kr/data/skin/responsive_sports_sporti_gl/images/banner/4/images_19.jpg); background-size:cover; background-repeat:no-repeat; background-position:center;}
+</style>
+
+<?php
 	$signin_field_order = get_option( 'wtb_signin_fields' );
 	$wtbsigninup_setopt = get_option( 'wtbsigninup_setopt' );
 	$wtbsinup_lang = get_option( 'wtbsinup_lang' );
@@ -68,7 +72,7 @@
 					case 'o_header':
 						?>
 						<div class="wtbfe-pgtitle-field">	   
-							<div class="wtbfe-pgtitle-text"><?php echo esc_html($value[1]);?></div>
+							<!--<div class="wtbfe-pgtitle-text"><?php echo esc_html($value[1]);?></div>-->
 						</div>
 						<?php
 						break;
@@ -84,175 +88,7 @@
  <div class="wtbfe-signin-box">
   <div class="wtbfe-signin-inner">
 	<div class="wtbfe-signin-fields-wrapper">
-
-        <div class="easy_login">
-            <div class="easy_login_wrap">
-
-                <div class="kakao_login">
-                    <!-- 카카오 간편로그인 api -->
-                    <a href="#0" id="kakaoLogin"><img src="https://ivenet02.cafe24.com/brandshop/kakao_login2.png" alt="카카오계정 로그인"/></a>
-                    <!--<a href="#0" id="kakaoLogout"><img src="https://ivenet02.cafe24.com/brandshop/kakao_loginout.png" alt="카카오계정 로그아웃"/></a>-->
-
-                    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-                    <script>
-                        function saveToDos(token) { //item을 localStorage에 저장합니다.
-                            typeof(Storage) !== 'undefined' && sessionStorage.setItem('AccessKEY', JSON.stringify(token));
-                        };
-
-                        window.Kakao.init('c67fe9f893b1825d518ba612f35a64fc');
-
-                        function kakaoLogin() {
-                            window.Kakao.Auth.login({
-                                scope: 'profile_nickname, account_email', //동의항목 페이지에 있는 개인정보 보호 테이블의 활성화된 ID값을 넣습니다.
-                                success: function(response) {
-                                    saveToDos(response.access_token)  // 로그인 성공하면 사용자 엑세스 토큰 sessionStorage에 저장
-                                    window.Kakao.API.request({ // 사용자 정보 가져오기
-                                        url: '/v2/user/me',
-                                        success: (res) => {
-                                            const kakao_account = res.kakao_account;
-                                            alert('로그인 성공');
-                                            window.location.href='https://brand.venet.kr/wp-content/plugins/wordpress-social-login/hybridauth/callbacks/kakao.php'
-                                        }
-                                    });
-                                },
-                                fail: function(error) {
-                                    console.log(error);
-                                }
-                            });
-                        };
-
-                        const login = document.querySelector('#kakaoLogin');
-                        login.addEventListener('click', kakaoLogin);
-                    </script>
-                    <script>
-
-                        window.Kakao.init('c67fe9f893b1825d518ba612f35a64fc');
-                        window.Kakao.Auth.setAccessToken(JSON.parse(sessionStorage.getItem('AccessKEY'))); //sessionStorage에 저장된 사용자 엑세스 토큰 받아온다.
-
-                        function kakaoLogout() {
-                            if (!Kakao.Auth.getAccessToken()) {
-                                console.log('Not logged in.');
-                                return;
-                            }
-                            Kakao.Auth.logout(function(response) {
-                                alert(response +' logout');
-                                window.location.href='/'
-                            });
-                        };
-
-                        function secession() {
-                            Kakao.API.request({
-                                url: '/v1/user/unlink',
-                                success: function(response) {
-                                    console.log(response);
-                                    //callback(); //연결끊기(탈퇴)성공시 서버에서 처리할 함수
-                                    window.location.href='/'
-                                },
-                                fail: function(error) {
-                                    console.log('탈퇴 미완료')
-                                    console.log(error);
-                                },
-                            });
-                        };
-
-                        const logout = document.querySelector('#kakaoLogout');
-                        const sion = document.querySelector('#secession');
-
-                        logout.addEventListener('click', kakaoLogout);
-                        sion.addEventListener('click', secession);
-                    </script>
-                </div>
-
-                <!-- 네이버 간편로그인 api -->
-                <div class="naver_login">
-                    <div>
-                        <div>
-                            <!-- 아래와같이 아이디를 꼭 써준다. -->
-                            <a id="naverIdLogin_loginButton" href="javascript:void(0)">
-                                <img src="https://ivenet02.cafe24.com/brandshop/naver_login2.png" alt="">
-                            </a>
-                        </div>
-                        <!--<div onclick="naverLogout(); return false;">
-                            <a href="javascript:void(0)">
-                                <img src="https://ivenet02.cafe24.com/brandshop/naver_logout.png" alt="">
-                            </a>
-                        </div>-->
-                    </div>
-
-                    <!-- 네이버 스크립트 -->
-                    <script src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.2.js" charset="utf-8"></script>
-
-                    <script>
-
-                        var naverLogin = new naver.LoginWithNaverId(
-                            {
-                                clientId: "Dkev_M65pD9vSrxwMgeJ", //내 애플리케이션 정보에 cliendId를 입력해줍니다.
-                                callbackUrl: "https://brand.venet.kr/wp-content/plugins/wordpress-social-login/hybridauth/callbacks/naver.php", // 내 애플리케이션 API설정의 Callback URL 을 입력해줍니다.
-                                isPopup: false,
-                                callbackHandle: true
-                            }
-                        );
-
-                        naverLogin.init();
-
-                        window.addEventListener('load', function () {
-                            naverLogin.getLoginStatus(function (status) {
-                                if (status) {
-                                    var email = naverLogin.user.getEmail(); // 필수로 설정할것을 받아와 아래처럼 조건문을 줍니다.
-
-                                    console.log(naverLogin.user);
-
-                                    if( email == undefined || email == null) {
-                                        alert("이메일은 필수정보입니다. 정보제공을 동의해주세요.");
-                                        naverLogin.reprompt();
-                                        return;
-                                    }
-                                } else {
-                                    console.log("callback 처리에 실패하였습니다.");
-                                }
-                            });
-                        });
-
-
-                        var testPopUp;
-                        function openPopUp() {
-                            testPopUp= window.open("https://nid.naver.com/nidlogin.logout", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,width=1,height=1");
-                        }
-                        function closePopUp(){
-                            testPopUp.close();
-                        }
-
-                        function naverLogout() {
-                            openPopUp();
-                            setTimeout(function() {
-                                closePopUp();
-                            }, 1000);
-
-
-                        }
-                    </script>
-                </div>
-
-                <div class="sns_login">
-                    <div class="wp-social-login-widget">
-                        <div class="wp-social-login-provider-list">
-                            <a rel="nofollow" href="https://brand.venet.kr/wp-login.php?action=wordpress_social_authenticate&amp;mode=login&amp;provider=Facebook&amp;redirect_to=https%3A%2F%2Fbrand.venet.kr%2Fwp-login.php%3Floggedout%3Dtrue%26wp_lang%3Dko_KR" title="Facebook: 사용하여 연동" class="wp-social-login-provider wp-social-login-provider-facebook" data-provider="Facebook" role="button" style="text-decoration:none;">
-                                <img alt="Facebook" src="https://ivenet02.cafe24.com/brandshop/facebook_login2.png" aria-hidden="true">
-                            </a>
-                            <a rel="nofollow" href="https://brand.venet.kr/wp-login.php?action=wordpress_social_authenticate&amp;mode=login&amp;provider=Google&amp;redirect_to=https%3A%2F%2Fbrand.venet.kr%2Fwp-login.php%3Floggedout%3Dtrue%26wp_lang%3Dko_KR" title="Google: 사용하여 연동" class="wp-social-login-provider wp-social-login-provider-google" data-provider="Google" role="button">
-                                <img alt="Google" src="https://ivenet02.cafe24.com/brandshop/google_login2.png" aria-hidden="true">
-                            </a>
-                        </div> <!-- / div.wp-social-login-connect-options -->
-
-                        <div class="wp-social-login-widget-clearing"></div>
-
-                    </div> <!-- / div.wp-social-login-widget -->
-                </div>
-            </div>
-
-        </div>
-
-
+        <div><p style="font-size:26px; margin-top:30px;"><b>로그인</b>을 시작합니다</p></div>
 		<?php
 			foreach($signin_field_order as $value) {
 			  if($value[3]=='on') {
@@ -378,6 +214,174 @@
 						break;
 					case 'o_signuplink':
 						?>
+
+                        <div class="easy_login">
+                            <div class="easy_login_wrap">
+
+                                <div class="kakao_login">
+                                    <!-- 카카오 간편로그인 api -->
+                                    <a href="#0" id="kakaoLogin"><img src="https://ivenet02.cafe24.com/brandshop/kakao_login2.png" alt="카카오계정 로그인"/></a>
+                                    <!--<a href="#0" id="kakaoLogout"><img src="https://ivenet02.cafe24.com/brandshop/kakao_loginout.png" alt="카카오계정 로그아웃"/></a>-->
+
+                                    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+                                    <script>
+                                        function saveToDos(token) { //item을 localStorage에 저장합니다.
+                                            typeof(Storage) !== 'undefined' && sessionStorage.setItem('AccessKEY', JSON.stringify(token));
+                                        };
+
+                                        window.Kakao.init('c67fe9f893b1825d518ba612f35a64fc');
+
+                                        function kakaoLogin() {
+                                            window.Kakao.Auth.login({
+                                                scope: 'profile_nickname, account_email', //동의항목 페이지에 있는 개인정보 보호 테이블의 활성화된 ID값을 넣습니다.
+                                                success: function(response) {
+                                                    saveToDos(response.access_token)  // 로그인 성공하면 사용자 엑세스 토큰 sessionStorage에 저장
+                                                    window.Kakao.API.request({ // 사용자 정보 가져오기
+                                                        url: '/v2/user/me',
+                                                        success: (res) => {
+                                                            const kakao_account = res.kakao_account;
+                                                            alert('로그인 성공');
+                                                            window.location.href='https://brand.venet.kr/wp-content/plugins/wordpress-social-login/hybridauth/callbacks/kakao.php'
+                                                        }
+                                                    });
+                                                },
+                                                fail: function(error) {
+                                                    console.log(error);
+                                                }
+                                            });
+                                        };
+
+                                        const login = document.querySelector('#kakaoLogin');
+                                        login.addEventListener('click', kakaoLogin);
+                                    </script>
+                                    <script>
+
+                                        window.Kakao.init('c67fe9f893b1825d518ba612f35a64fc');
+                                        window.Kakao.Auth.setAccessToken(JSON.parse(sessionStorage.getItem('AccessKEY'))); //sessionStorage에 저장된 사용자 엑세스 토큰 받아온다.
+
+                                        function kakaoLogout() {
+                                            if (!Kakao.Auth.getAccessToken()) {
+                                                console.log('Not logged in.');
+                                                return;
+                                            }
+                                            Kakao.Auth.logout(function(response) {
+                                                alert(response +' logout');
+                                                window.location.href='/'
+                                            });
+                                        };
+
+                                        function secession() {
+                                            Kakao.API.request({
+                                                url: '/v1/user/unlink',
+                                                success: function(response) {
+                                                    console.log(response);
+                                                    //callback(); //연결끊기(탈퇴)성공시 서버에서 처리할 함수
+                                                    window.location.href='/'
+                                                },
+                                                fail: function(error) {
+                                                    console.log('탈퇴 미완료')
+                                                    console.log(error);
+                                                },
+                                            });
+                                        };
+
+                                        const logout = document.querySelector('#kakaoLogout');
+                                        const sion = document.querySelector('#secession');
+
+                                        logout.addEventListener('click', kakaoLogout);
+                                        sion.addEventListener('click', secession);
+                                    </script>
+                                </div>
+
+                                <!-- 네이버 간편로그인 api -->
+                                <div class="naver_login">
+                                    <div>
+                                        <div>
+                                            <!-- 아래와같이 아이디를 꼭 써준다. -->
+                                            <a id="naverIdLogin_loginButton" href="javascript:void(0)">
+                                                <img src="https://ivenet02.cafe24.com/brandshop/naver_login2.png" alt="">
+                                            </a>
+                                        </div>
+                                        <!--<div onclick="naverLogout(); return false;">
+                                            <a href="javascript:void(0)">
+                                                <img src="https://ivenet02.cafe24.com/brandshop/naver_logout.png" alt="">
+                                            </a>
+                                        </div>-->
+                                    </div>
+
+                                    <!-- 네이버 스크립트 -->
+                                    <script src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.2.js" charset="utf-8"></script>
+
+                                    <script>
+
+                                        var naverLogin = new naver.LoginWithNaverId(
+                                            {
+                                                clientId: "Dkev_M65pD9vSrxwMgeJ", //내 애플리케이션 정보에 cliendId를 입력해줍니다.
+                                                callbackUrl: "https://brand.venet.kr/wp-content/plugins/wordpress-social-login/hybridauth/callbacks/naver.php", // 내 애플리케이션 API설정의 Callback URL 을 입력해줍니다.
+                                                isPopup: false,
+                                                callbackHandle: true
+                                            }
+                                        );
+
+                                        naverLogin.init();
+
+                                        window.addEventListener('load', function () {
+                                            naverLogin.getLoginStatus(function (status) {
+                                                if (status) {
+                                                    var email = naverLogin.user.getEmail(); // 필수로 설정할것을 받아와 아래처럼 조건문을 줍니다.
+
+                                                    console.log(naverLogin.user);
+
+                                                    if( email == undefined || email == null) {
+                                                        alert("이메일은 필수정보입니다. 정보제공을 동의해주세요.");
+                                                        naverLogin.reprompt();
+                                                        return;
+                                                    }
+                                                } else {
+                                                    console.log("callback 처리에 실패하였습니다.");
+                                                }
+                                            });
+                                        });
+
+
+                                        var testPopUp;
+                                        function openPopUp() {
+                                            testPopUp= window.open("https://nid.naver.com/nidlogin.logout", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,width=1,height=1");
+                                        }
+                                        function closePopUp(){
+                                            testPopUp.close();
+                                        }
+
+                                        function naverLogout() {
+                                            openPopUp();
+                                            setTimeout(function() {
+                                                closePopUp();
+                                            }, 1000);
+
+
+                                        }
+                                    </script>
+                                </div>
+
+                                <div class="sns_login">
+                                    <div class="wp-social-login-widget">
+                                        <div class="wp-social-login-provider-list">
+                                            <a rel="nofollow" href="https://brand.venet.kr/wp-login.php?action=wordpress_social_authenticate&amp;mode=login&amp;provider=Facebook&amp;redirect_to=https%3A%2F%2Fbrand.venet.kr%2Fwp-login.php%3Floggedout%3Dtrue%26wp_lang%3Dko_KR" title="Facebook: 사용하여 연동" class="wp-social-login-provider wp-social-login-provider-facebook" data-provider="Facebook" role="button" style="text-decoration:none;">
+                                                <img alt="Facebook" src="https://ivenet02.cafe24.com/brandshop/facebook_login2.png" aria-hidden="true">
+                                            </a>
+                                            <a rel="nofollow" href="https://brand.venet.kr/wp-login.php?action=wordpress_social_authenticate&amp;mode=login&amp;provider=Google&amp;redirect_to=https%3A%2F%2Fbrand.venet.kr%2Fwp-login.php%3Floggedout%3Dtrue%26wp_lang%3Dko_KR" title="Google: 사용하여 연동" class="wp-social-login-provider wp-social-login-provider-google" data-provider="Google" role="button">
+                                                <img alt="Google" src="https://ivenet02.cafe24.com/brandshop/google_login2.png" aria-hidden="true">
+                                            </a>
+                                        </div> <!-- / div.wp-social-login-connect-options -->
+
+                                        <div class="wp-social-login-widget-clearing"></div>
+
+                                    </div> <!-- / div.wp-social-login-widget -->
+                                </div>
+                            </div>
+
+                        </div>
+
 						<div class="wtbfe-input-field sin_signuplink">
 							<a href="<?php if ( (isset($wtbsigninup_setopt[1])) && ($wtbsigninup_setopt[1]!=1) ) echo get_permalink($wtbsigninup_setopt[1]); else echo "#";?>"> <?php if(isset($value[1])) echo esc_html($value[1]);?> </a>
 						</div>
@@ -389,6 +393,7 @@
 			  }//if
 			}//foreach
 		?>
+
 	</div>
 
   </div>

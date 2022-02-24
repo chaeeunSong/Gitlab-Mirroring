@@ -12,7 +12,7 @@ Text Domain: botiga
 
 /* test */
 
-.title{width:50px; background:#0A246A; height:50px; float:left; color:#fff; text-align:center; line-height:50px;}
+/*.title{width:50px; background:#0A246A; height:50px; float:left; color:#fff; text-align:center; line-height:50px;}*/
 .main_viewer_btn{width:120px; height:50px; line-height: 50px; float:left; color:#fff; text-align:center; background:#0f834d; color:#fff; text-align:center; font-size:12px; opacity:1; cursor:pointer;}
 .main_viewer_btn:hover{opacity:0.8; transition:.6s;}
 
