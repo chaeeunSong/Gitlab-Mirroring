@@ -41,3 +41,20 @@ add_filter('woocommerce_product_add_to_cart_text', 'my_woocommerce_product_add_t
 function my_woocommerce_product_add_to_cart_text_20210504(){
     return '장바구니 추가';
 }
+
+
+// Change My Account Menu
+
+function my_account_menu_order() {
+    $menuOrder = array(
+        'dashboard' => __( 'Dashboard', 'woocommerce' ),
+        'orders' => __( '내주문', 'woocommerce' ),
+        //'downloads' => __( 'Download', 'woocommerce' ),
+        'edit-address' => __( 'Addresses', 'woocommerce' ),
+        'edit-account' => __( '계정 정보', 'woocommerce' ),
+        'customer-logout' => __( 'Logout', 'woocommerce' ),
+
+    );
+    return $menuOrder;
+}
+add_filter ( 'woocommerce_account_menu_items', 'my_account_menu_order' );
