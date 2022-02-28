@@ -31,6 +31,7 @@ Text Domain: botiga
 
 /* Product page 스타일 적용 */
 body.page-id-547{background:#f4f4f4;}
+/*#product-556 .entry-content a{text-decoration:none;}*/
 
 /* BrandStory page 스타일 적용 */
 body.page-id-653 .content-wrapper{margin-top:0;}
@@ -51,7 +52,7 @@ body.page-id-30 .register{border:0;}
 .email_login_form{display: none; padding-top:30px;}
 .naver_login img{display: block; width:48%; float: left; margin-left:1%; margin-right: 1%;}
 .kakao_login img{display: block; width:48%; float: left; margin-left:1%; margin-right: 1%;}
-.wp-social-login-provider-list img{display: block; width:48%; float: left; margin-left:1%; margin-right: 1%;}
+body.page-id-850 .wp-social-login-provider-list img{display: block; width:48%; float: left; margin-left:1%; margin-right: 1%;}
 
 /* register page */
 .register_con{overflow:hidden; padding-bottom:50px;}
