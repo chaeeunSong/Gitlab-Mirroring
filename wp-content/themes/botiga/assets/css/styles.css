@@ -659,7 +659,7 @@ a:hover, a:active {
 }
 
 .entry-content a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .product-name a, a.wp-block-button__link, a.remove, a.button {
