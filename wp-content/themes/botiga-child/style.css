@@ -82,6 +82,8 @@ body.page-id-925 .entry-header{display: none;}
 
 #wpcf7-f880-p881-o1{margin-top:50px;}
 
+.kboard-default-poweredby { display: none; }
+
 /* 반응형 스타일 */
 @media only screen and (max-width: 991px){
     .titleTxt{font-size:24px;}
