@@ -84,6 +84,8 @@ body.page-id-925 .entry-header{display: none;}
 
 .kboard-default-poweredby { display: none; }
 
+.site-info{display:none;}
+
 /* 반응형 스타일 */
 @media only screen and (max-width: 991px){
     .titleTxt{font-size:24px;}
