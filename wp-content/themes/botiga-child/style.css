@@ -86,6 +86,16 @@ body.page-id-925 .entry-header{display: none;}
 
 .site-info{display:none;}
 
+/* YITH Quick View */
+#yith-quick-view-content .entry-title{font-size:30px;}
+#yith-quick-view-content div.summary{padding-top:80px;}
+#yith-quick-view-content .quantity{float:left;}
+#yith-quick-view-content .single_add_to_cart_button{float:left; height:57px;}
+#yith-quick-view-content .product_meta{margin-top:20px;}
+#yith-quick-view-content div.images{width:50%;}
+#yith-quick-view-content div.summary{width:50%;}
+#yith-quick-view-content .yith-wcqv-wrapper{height:auto;}
+
 /* 반응형 스타일 */
 @media only screen and (max-width: 991px){
     .titleTxt{font-size:24px;}
